@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+:root {
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+}
+body{
+  background-color: var(--Dark-Blue);
+}
+.bg-body {
+  background-color: var(--Dark-Blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advicebox-bg {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 340px;
+  margin: 0px auto;
+  height: auto;
+  border-radius: 20px;
+
+  position: relative;
+}
+.advice-text {
+  position: relative;
+  text-align: center;
+  padding: 35px 25px;
+}
+.advice-text h1 {
+  color: var(--Neon-Green);
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+.advice-text p {
+  font-size: 28px;
+  color: var(--Light-Cyan);
+}
+.divider-desktop {
+  display: none;
+}
+.divider-mobile{
+  display: block;
+  margin: 60px auto;
+}
+.dice-box{
+  display: flex;
+  justify-content: center;
+}
+.dice-circle {
+  height: 70px;
+  width: 70px;
+  background-color: var(--Neon-Green);
+  border-radius: 100%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 15px 1px var(--Light-Cyan);
+}
+
+.dice-circle img {
+  width: 30px;
+  height: 30px;
+} 
+
+@media (min-width: 1024px) {
+  .advicebox-bg {
+    width: 540px;
+    margin: 0px auto;
+  }
+  .divider-desktop {
+display: block;
+  margin: 40px auto;
+ 
+  }
+  .divider-mobile {
+    display: none;
+  }
+  .advice-text {
+    padding: 55px 30px;
+  }
+  .dice-circle {
+    right: 43%;
+  }
+  
+}
